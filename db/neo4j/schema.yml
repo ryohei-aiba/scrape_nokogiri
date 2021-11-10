@@ -1,0 +1,83 @@
+# This file is auto-generated from the current state of the database. Instead
+# of editing this file, please use the migrations feature of ActiveNode to
+# incrementally modify your database, and then regenerate this schema definition.
+#
+# Note that this schema.yml definition is the authoritative source for your
+# database schema. If you need to create the application database on another
+# system, you should be using neo4j:schema:load, not running all the migrations
+# from scratch. The latter is a flawed and unsustainable approach (the more migrations
+# you'll amass, the slower it'll run and the greater likelihood for issues).
+#
+# It's strongly recommended that you check this file into your version control system.
+
+---
+:constraints:
+- CONSTRAINT ON ( `neo4j::migrations::schemamigration`:`Neo4j::Migrations::SchemaMigration`
+  ) ASSERT `neo4j::migrations::schemamigration`.migration_id IS UNIQUE
+- CONSTRAINT ON ( age:Age ) ASSERT age.code IS UNIQUE
+- CONSTRAINT ON ( birth:Birth ) ASSERT birth.code IS UNIQUE
+- CONSTRAINT ON ( bloodtype:BloodType ) ASSERT bloodtype.code IS UNIQUE
+- CONSTRAINT ON ( dexterity:Dexterity ) ASSERT dexterity.code IS UNIQUE
+- CONSTRAINT ON ( from:From ) ASSERT from.code IS UNIQUE
+- CONSTRAINT ON ( height:Height ) ASSERT height.code IS UNIQUE
+- CONSTRAINT ON ( income:Income ) ASSERT income.code IS UNIQUE
+- CONSTRAINT ON ( number:Number ) ASSERT number.code IS UNIQUE
+- CONSTRAINT ON ( player:Player ) ASSERT player.code IS UNIQUE
+- CONSTRAINT ON ( position:Position ) ASSERT position.code IS UNIQUE
+- CONSTRAINT ON ( weight:Weight ) ASSERT weight.code IS UNIQUE
+- CONSTRAINT ON ( year:Year ) ASSERT year.code IS UNIQUE
+- CONSTRAINT ON ( 体重:体重 ) ASSERT 体重.code IS UNIQUE
+- CONSTRAINT ON ( 出身地:出身地 ) ASSERT 出身地.code IS UNIQUE
+- CONSTRAINT ON ( 守備:守備 ) ASSERT 守備.code IS UNIQUE
+- CONSTRAINT ON ( 年俸:年俸 ) ASSERT 年俸.code IS UNIQUE
+- CONSTRAINT ON ( 年数:年数 ) ASSERT 年数.code IS UNIQUE
+- CONSTRAINT ON ( 年齢:年齢 ) ASSERT 年齢.code IS UNIQUE
+- CONSTRAINT ON ( 投打:投打 ) ASSERT 投打.code IS UNIQUE
+- CONSTRAINT ON ( 生年月日:生年月日 ) ASSERT 生年月日.code IS UNIQUE
+- CONSTRAINT ON ( 背番号:背番号 ) ASSERT 背番号.code IS UNIQUE
+- CONSTRAINT ON ( 血液型:血液型 ) ASSERT 血液型.code IS UNIQUE
+- CONSTRAINT ON ( 身長:身長 ) ASSERT 身長.code IS UNIQUE
+- CONSTRAINT ON ( 選手名:選手名 ) ASSERT 選手名.code IS UNIQUE
+:indexes: []
+:versions:
+- '20211110081716'
+- '20211110081731'
+- '20211110081842'
+- '20211110081922'
+- '20211110081947'
+- '20211110082010'
+- '20211110082037'
+- '20211110082051'
+- '20211110082110'
+- '20211110082135'
+- '20211110082153'
+- '20211110082206'
+- '20211110083922'
+- '20211110083952'
+- '20211110084010'
+- '20211110084046'
+- '20211110084109'
+- '20211110084240'
+- '20211110084257'
+- '20211110084330'
+- '20211110084352'
+- '20211110084410'
+- '20211110084653'
+- '20211110084709'
+- '20211110084722'
+- '20211110084738'
+- '20211110084751'
+- '20211110084804'
+- '20211110084820'
+- '20211110084834'
+- '20211110084846'
+- '20211110084858'
+- '20211110084920'
+- '20211110084932'
+- '20211110084944'
+- '20211110084956'
+- '20211110085015'
+- '20211110085034'
+- '20211110085205'
+- '20211110085308'
+- '20211110085351'
